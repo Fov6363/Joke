@@ -1,0 +1,38 @@
+#! /bin/sh
+nowday=`date +%Y%m%d_%H%M%S`
+test -d ../gclogs || mkdir ../gclogs
+
+export CATALINA_OPTS="$CATALINA_OPTS -server -Xmx800m -Xms800m -Xmn450m -Xss256k -DServer=mblog -XX:PermSize=80m -XX:MaxPermSize=80m"
+export CATALINA_OPTS="$CATALINA_OPTS "
+
+# http://wiki.apache.org/tomcat/FAQ/Memoryhttp://wiki.apache.org/tomcat/FAQ/Memory
+export CATALINA_OPTS="$CATALINA_OPTS -XX:+DisableExplicitGC -XX:+UseConcMarkSweepGC -XX:+CMSParallelRemarkEnabled -XX:+UseCMSCompactAtFullCollection -XX:LargePageSizeInBytes=128m -XX:+UseFastAccessorMethods -XX:+UseCMSInitiatingOccupancyOnly -XX:CMSInitiatingOccupancyFraction=70"
+
+# http://www.oracle.com/technetwork/java/hotspotfaq-138619.html
+export CATALINA_OPTS="$CATALINA_OPTS -XX:+PrintFlagsFinal -XX:+PrintCommandLineFlags -XX:+PrintGCDateStamps -XX:+PrintTenuringDistribution -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintGCApplicationStoppedTime -XX:+PrintGCApplicationConcurrentTime"
+
+# [Also enables adaptive sizing automatically]
+export CATALINA_OPTS="$CATALINA_OPTS -Dconsole.port=880 -Xloggc:../gclogs/gc.log.$nowday"
+
+#for debug
+export CATALINA_OPTS="$CATALINA_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8889"
+
+# Check for application specific parameters at startup
+if [ -r "$CATALINA_BASE/bin/appenv.sh" ]; then
+  . "$CATALINA_BASE/bin/appenv.sh"
+fi
+
+echo "Using CATALINA_OPTS:"
+for arg in $CATALINA_OPTS
+do
+    echo ">> " $arg
+done
+echo ""
+
+echo "Using JAVA_OPTS:"
+for arg in $JAVA_OPTS
+do
+    echo ">> " $arg
+done
+echo "_______________________________________________"
+echo ""

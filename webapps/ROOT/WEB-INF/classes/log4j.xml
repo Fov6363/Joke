@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+    <appender name="CONSOLE" class="org.apache.log4j.ConsoleAppender">
+        <param name="Threshold" value="debug" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="[console] %p %d{yy/MM/dd HH:mm:ss} %-50.50c - %m%n" />
+        </layout>
+    </appender>
+    <appender name="USER_OP" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="../logs/user_op.log" />
+        <param name="Encoding" value="UTF-8" />
+        <param name="ImmediateFlush" value="true" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yy/MM/dd HH:mm:ss} - %m%n" />
+        </layout>
+    </appender>
+    <appender name="counter_file" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="../logs/counter.log" />
+        <param name="Encoding" value="UTF-8" />
+        <param name="ImmediateFlush" value="true" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yy/MM/dd HH:mm:ss} - %m%n" />
+        </layout>
+    </appender>
+    <appender name="INFO_FILE" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="../logs/debug_cn.log" />
+        <param name="Encoding" value="UTF-8" />
+        <param name="ImmediateFlush" value="true" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yy/MM/dd HH:mm:ss} - %m%n" />
+        </layout>
+    </appender>
+    <appender name="WARN_FILE" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="../logs/warn.log" />
+        <param name="Encoding" value="UTF-8" />
+        <param name="ImmediateFlush" value="true" />
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{yy/MM/dd HH:mm:ss} - %m%n" />
+        </layout>
+    </appender>
+    <logger name="org.springframework">
+        <level value="error" />
+        <appender-ref ref="INFO_FILE" />
+    </logger>
+       <logger name="debug_stat">
+        <level value="error" />
+        <appender-ref ref="INFO_FILE" />
+    </logger>
+    <logger name="com.wejoy">
+        <level value="info" />
+        <appender-ref ref="INFO_FILE" />
+    </logger>
+    <logger name="com.geekniu.live">
+        <level value="info" />
+        <appender-ref ref="INFO_FILE" />
+    </logger>
+    <logger name="net.sf.ehcache">
+        <level value="error" />
+        <appender-ref ref="INFO_FILE" />
+    </logger>
+     <logger name="USER_OP_LOGGER" additivity="false">
+        <level value="INFO" />
+        <appender-ref ref="USER_OP" />
+    </logger>
+     <logger name="counter" additivity="false">
+        <level value="INFO" />
+        <appender-ref ref="counter_file" />
+    </logger>
+    <logger name="cn.wejoy.api">
+        <level value="info" />
+        <appender-ref ref="INFO_FILE" />
+    </logger>
+
+    <logger name="info">
+        <level value="info" />
+        <appender-ref ref="INFO_FILE" />
+    </logger>
+    <logger name="error">
+        <level value="info" />
+        <appender-ref ref="WARN_FILE" />
+    </logger>
+    <logger name="warn">
+        <level value="info" />
+        <appender-ref ref="WARN_FILE" />
+    </logger>
+</log4j:configuration>

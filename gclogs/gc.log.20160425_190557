@@ -1,0 +1,17 @@
+Java HotSpot(TM) 64-Bit Server VM (24.80-b11) for bsd-amd64 JRE (1.7.0_80-b15), built on Apr 10 2015 11:25:43 by "java_re" with gcc 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.11.00)
+Memory: 4k page, physical 8388608k(2097152k free)
+
+/proc/meminfo:
+
+CommandLine flags: -XX:CMSInitiatingOccupancyFraction=70 -XX:+CMSParallelRemarkEnabled -XX:+DisableExplicitGC -XX:InitialHeapSize=838860800 -XX:LargePageSizeInBytes=134217728 -XX:MaxHeapSize=838860800 -XX:MaxNewSize=471859200 -XX:MaxPermSize=83886080 -XX:MaxTenuringThreshold=6 -XX:NewSize=471859200 -XX:OldPLABSize=16 -XX:PermSize=83886080 -XX:+PrintCommandLineFlags -XX:+PrintFlagsFinal -XX:+PrintGC -XX:+PrintGCApplicationConcurrentTime -XX:+PrintGCApplicationStoppedTime -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -XX:ThreadStackSize=256 -XX:+UseCMSCompactAtFullCollection -XX:+UseCMSInitiatingOccupancyOnly -XX:+UseCompressedOops -XX:+UseConcMarkSweepGC -XX:+UseFastAccessorMethods -XX:+UseParNewGC 
+2016-04-25T19:05:58.566-0800: 0.663: Application time: 0.5979740 seconds
+2016-04-25T19:05:58.566-0800: 0.663: Total time for which application threads were stopped: 0.0000750 seconds, Stopping threads took: 0.0000110 seconds
+2016-04-25T19:05:59.571-0800: 1.668: Application time: 1.0049500 seconds
+2016-04-25T19:05:59.571-0800: 1.668: Total time for which application threads were stopped: 0.0002610 seconds, Stopping threads took: 0.0001290 seconds
+2016-04-25T19:06:00.573-0800: 2.669: Application time: 1.0016150 seconds
+2016-04-25T19:06:00.573-0800: 2.670: Total time for which application threads were stopped: 0.0002170 seconds, Stopping threads took: 0.0001240 seconds
+2016-04-25T19:06:01.025-0800: 3.122: Application time: 0.4523130 seconds
+2016-04-25T19:06:01.025-0800: 3.122: [GC2016-04-25T19:06:01.025-0800: 3.122: [ParNew
+Desired survivor size 23592960 bytes, new threshold 1 (max 6)
+- age   1:   47063248 bytes,   47063248 total
+: 368640K->46080K(414720K), 0.0433720 secs] 368640K->46145K(773120K), 0.0434470 secs] [Times: user=0.08 sys=0.02, real=0.04 secs] 

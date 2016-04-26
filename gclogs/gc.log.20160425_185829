@@ -1,0 +1,54 @@
+Java HotSpot(TM) 64-Bit Server VM (24.80-b11) for bsd-amd64 JRE (1.7.0_80-b15), built on Apr 10 2015 11:25:43 by "java_re" with gcc 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.11.00)
+Memory: 4k page, physical 8388608k(2097152k free)
+
+/proc/meminfo:
+
+CommandLine flags: -XX:CMSInitiatingOccupancyFraction=70 -XX:+CMSParallelRemarkEnabled -XX:+DisableExplicitGC -XX:InitialHeapSize=838860800 -XX:LargePageSizeInBytes=134217728 -XX:MaxHeapSize=838860800 -XX:MaxNewSize=471859200 -XX:MaxPermSize=83886080 -XX:MaxTenuringThreshold=6 -XX:NewSize=471859200 -XX:OldPLABSize=16 -XX:PermSize=83886080 -XX:+PrintCommandLineFlags -XX:+PrintFlagsFinal -XX:+PrintGC -XX:+PrintGCApplicationConcurrentTime -XX:+PrintGCApplicationStoppedTime -XX:+PrintGCDateStamps -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -XX:+PrintTenuringDistribution -XX:ThreadStackSize=256 -XX:+UseCMSCompactAtFullCollection -XX:+UseCMSInitiatingOccupancyOnly -XX:+UseCompressedOops -XX:+UseConcMarkSweepGC -XX:+UseFastAccessorMethods -XX:+UseParNewGC 
+2016-04-25T18:58:30.152-0800: 0.688: Application time: 0.6251840 seconds
+2016-04-25T18:58:30.152-0800: 0.688: Total time for which application threads were stopped: 0.0000880 seconds, Stopping threads took: 0.0000120 seconds
+2016-04-25T18:58:31.153-0800: 1.688: Application time: 1.0007490 seconds
+2016-04-25T18:58:31.153-0800: 1.689: Total time for which application threads were stopped: 0.0002070 seconds, Stopping threads took: 0.0000670 seconds
+2016-04-25T18:58:32.154-0800: 2.689: Application time: 1.0003610 seconds
+2016-04-25T18:58:32.154-0800: 2.689: Total time for which application threads were stopped: 0.0001320 seconds, Stopping threads took: 0.0000180 seconds
+2016-04-25T18:58:32.740-0800: 3.275: Application time: 0.5858980 seconds
+2016-04-25T18:58:32.740-0800: 3.275: [GC2016-04-25T18:58:32.740-0800: 3.275: [ParNew
+Desired survivor size 23592960 bytes, new threshold 1 (max 6)
+- age   1:   44891896 bytes,   44891896 total
+: 368640K->43943K(414720K), 0.0666870 secs] 368640K->43943K(773120K), 0.0667670 secs] [Times: user=0.09 sys=0.03, real=0.06 secs] 
+2016-04-25T18:58:32.806-0800: 3.342: Total time for which application threads were stopped: 0.0669320 seconds, Stopping threads took: 0.0000140 seconds
+2016-04-25T18:58:33.563-0800: 4.098: Application time: 0.7562510 seconds
+2016-04-25T18:58:33.563-0800: 4.098: Total time for which application threads were stopped: 0.0002410 seconds, Stopping threads took: 0.0000220 seconds
+2016-04-25T18:58:33.695-0800: 4.231: Application time: 0.1323370 seconds
+2016-04-25T18:58:33.695-0800: 4.231: Total time for which application threads were stopped: 0.0000780 seconds, Stopping threads took: 0.0000120 seconds
+2016-04-25T18:58:33.804-0800: 4.339: Application time: 0.1083710 seconds
+2016-04-25T18:58:33.804-0800: 4.339: Total time for which application threads were stopped: 0.0000670 seconds, Stopping threads took: 0.0000120 seconds
+2016-04-25T18:58:34.539-0800: 5.075: Application time: 0.7355530 seconds
+2016-04-25T18:58:34.540-0800: 5.075: Total time for which application threads were stopped: 0.0001870 seconds, Stopping threads took: 0.0000230 seconds
+2016-04-25T18:58:34.730-0800: 5.265: Application time: 0.1899320 seconds
+2016-04-25T18:58:34.730-0800: 5.265: Total time for which application threads were stopped: 0.0000830 seconds, Stopping threads took: 0.0000270 seconds
+2016-04-25T18:58:34.730-0800: 5.265: Application time: 0.0001160 seconds
+2016-04-25T18:58:34.730-0800: 5.265: Total time for which application threads were stopped: 0.0000320 seconds, Stopping threads took: 0.0000100 seconds
+2016-04-25T18:58:34.730-0800: 5.265: Application time: 0.0000930 seconds
+2016-04-25T18:58:34.730-0800: 5.265: Total time for which application threads were stopped: 0.0000290 seconds, Stopping threads took: 0.0000090 seconds
+2016-04-25T18:58:34.730-0800: 5.265: Application time: 0.0000910 seconds
+2016-04-25T18:58:34.730-0800: 5.265: Total time for which application threads were stopped: 0.0000750 seconds, Stopping threads took: 0.0000540 seconds
+2016-04-25T18:58:34.730-0800: 5.266: Application time: 0.0000240 seconds
+2016-04-25T18:58:34.730-0800: 5.266: Total time for which application threads were stopped: 0.0000760 seconds, Stopping threads took: 0.0000250 seconds
+2016-04-25T18:58:34.764-0800: 5.300: Application time: 0.0342170 seconds
+2016-04-25T18:58:34.764-0800: 5.300: Total time for which application threads were stopped: 0.0000840 seconds, Stopping threads took: 0.0000490 seconds
+2016-04-25T18:58:34.765-0800: 5.300: Application time: 0.0000610 seconds
+2016-04-25T18:58:34.765-0800: 5.300: Total time for which application threads were stopped: 0.0000570 seconds, Stopping threads took: 0.0000380 seconds
+2016-04-25T18:58:34.772-0800: 5.308: Application time: 0.0076480 seconds
+2016-04-25T18:58:34.772-0800: 5.308: Total time for which application threads were stopped: 0.0000340 seconds, Stopping threads took: 0.0000130 seconds
+2016-04-25T18:58:34.773-0800: 5.309: Application time: 0.0012140 seconds
+2016-04-25T18:58:34.774-0800: 5.309: Total time for which application threads were stopped: 0.0000250 seconds, Stopping threads took: 0.0000080 seconds
+2016-04-25T18:58:34.775-0800: 5.310: Application time: 0.0009840 seconds
+2016-04-25T18:58:34.775-0800: 5.310: Total time for which application threads were stopped: 0.0000270 seconds, Stopping threads took: 0.0000060 seconds
+2016-04-25T18:58:34.776-0800: 5.311: Application time: 0.0010880 seconds
+2016-04-25T18:58:34.776-0800: 5.311: Total time for which application threads were stopped: 0.0000290 seconds, Stopping threads took: 0.0000100 seconds
+2016-04-25T18:58:34.777-0800: 5.312: Application time: 0.0009990 seconds
+2016-04-25T18:58:34.777-0800: 5.312: Total time for which application threads were stopped: 0.0000200 seconds, Stopping threads took: 0.0000060 seconds
+2016-04-25T18:58:34.778-0800: 5.313: Application time: 0.0009860 seconds
+2016-04-25T18:58:34.778-0800: 5.313: Total time for which application threads were stopped: 0.0000220 seconds, Stopping threads took: 0.0000070 seconds
+2016-04-25T18:58:35.783-0800: 6.318: Application time: 1.0048770 seconds
+2016-04-25T18:58:35.783-0800: 6.318: Total tim
